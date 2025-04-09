@@ -1,0 +1,195 @@
+p {
+font-size: 25px;
+color: noir;
+}
+h2 {
+font-size: 50px;
+color: blueviolet;
+}
+
+h1 {
+color: deeppink;
+}
+
+h3 {
+font-size: 40px;
+color: blueviolet;
+}
+
+body {
+  background-color: rgb(231, 183, 223);
+}
+
+.banniere {
+  position: relative;
+  width: 170%;
+  height: 250px;
+  background-size: cover;
+  background-position: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(241, 6, 143);
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  /* Important pour le positionnement absolu du texte */
+  display: inline-block;
+  /* Pour que le conteneur s'adapte à la taille de l'image */
+}
+
+.image-text {
+  position: absolute;
+  /* Positionne le texte par rapport au conteneur */
+  top: 50%;
+  /* Position verticale au centre */
+  left: 50%;
+  /* Position horizontale au centre */
+  transform: translate(-60%, -50%);
+  /* Centre parfaitement le texte */
+  color: rgb(252, 186, 64);
+  /* Couleur du texte */
+  font-size: 50px;
+  /* Taille de la police */
+  font-weight: bold;
+  /* Texte en gras */
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Arrière-plan semi-transparent */
+  padding: 10px;
+  /* Espacement intérieur */
+}
+
+.conteneur-images {
+  display: flex; /* Active Flexbox pour le conteneur */
+  flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
+  justify-content: space-around; /* Distribue l'espace entre les images */
+  align-items: stretch; /* Aligne le haut des éléments */
+  gap: 20px; /* Ajoute de l'espace entre les images */
+  padding: 60px; /* Ajoute un peu de marge autour du conteneur */
+}
+
+  img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px; /* Pour un effet arrondi */
+  }
+  
+  img:hover {
+  transform: translateY(-5px); /* Légère élévation */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ombre */
+  }
+
+.conteneur-images figure figcaption {
+  font-size: 0.9em; /* Taille de la police de la description */
+  color: #555; /* Couleur du texte de la description */
+}
+
+.site-footer {
+  background-color: #f0f0f0; /* Couleur de fond du pied de page (exemple) */
+  padding: 20px;
+  text-align: center; /* Centre le texte par défaut */
+}
+
+.reseaux-sociaux {
+  display: flex; /* Active Flexbox pour le conteneur des logos */
+  justify-content: center; /* Centre les éléments horizontalement */
+  align-items: center; /* Centre les éléments verticalement (si nécessaire) */
+  gap: 15px; /* Espacement entre les logos */
+  margin-bottom: 10px; /* Marge en bas pour séparer des autres éléments du pied de page */
+}
+
+.reseaux-sociaux a {
+  display: block; /* Empêche les marges de se condenser et permet de définir une taille si nécessaire */
+}
+
+.reseaux-sociaux img {
+  height: 30px; /* Définissez la hauteur souhaitée */
+  width: auto; /* La largeur s'ajustera proportionnellement */
+  display: block; /* Supprime les espaces potentiels en bas de l'image */
+}
+
+/* Optionnel : Pour des logos carrés avec une taille fixe */
+/*
+.reseaux-sociaux img {
+  height: 30px;
+  width: 30px;
+  object-fit: contain; !* Pour que l'image s'adapte sans être rognée *!
+}
+*/
+
+
+form {
+  /* On centre le formulaire */
+  margin: 0 auto;
+  width: 400px;
+  /* Le contour du formulaire */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* On s'assure que les champs texte ont la même police
+     Par défaut, les zones de texte ont une police à chasse
+     fixe. */
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* On rajoute une mise en avant pour les éléments avec
+     le focus. */
+  border-color: #000;
+}
+
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leur
+     libellé. */
+  vertical-align: top;
+
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 5em;
+
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}
+
+.button {
+  /* On aligne les boutons avec les champs texte. */
+  padding-left: 90px; /* La même taille que les libellés */
+}
+
+button {
+  /* Une marge supplémentaire représentant approximativement
+     le même espace qu'entre les libellés et les champs. */
+  margin-left: 0.5em;
+}
+
