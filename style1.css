@@ -1,114 +1,97 @@
 p {
-font-size: 25px;
-color: noir;
+  font-size: 25px;
+  color: black;
+  font-family: open sans;
 }
+
 h2 {
-font-size: 50px;
-color: blueviolet;
+  font-size: 30px;
+  color: #800080;
+  font-family: montserrat;
 }
 
 h1 {
-color: deeppink;
+  color: #4B0082;
+  font-family: releway;
+  font-size: 30px;
 }
 
 h3 {
-font-size: 40px;
-color: blueviolet;
-}
-
-body {
-  background-color: rgb(231, 183, 223);
-}
-
-.banniere {
-  position: relative;
-  width: 170%;
-  height: 250px;
-  background-size: cover;
-  background-position: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(241, 6, 143);
-  text-align: center;
-}
-
-.image-container {
-  position: relative;
-  /* Important pour le positionnement absolu du texte */
-  display: inline-block;
-  /* Pour que le conteneur s'adapte à la taille de l'image */
-}
-
-.image-text {
-  position: absolute;
-  /* Positionne le texte par rapport au conteneur */
-  top: 50%;
-  /* Position verticale au centre */
-  left: 50%;
-  /* Position horizontale au centre */
-  transform: translate(-60%, -50%);
-  /* Centre parfaitement le texte */
-  color: rgb(252, 186, 64);
-  /* Couleur du texte */
-  font-size: 50px;
-  /* Taille de la police */
-  font-weight: bold;
-  /* Texte en gras */
-  background-color: rgba(0, 0, 0, 0.5);
-  /* Arrière-plan semi-transparent */
-  padding: 10px;
-  /* Espacement intérieur */
+  font-size: 30px;
+  color: #800080;
+  font-family: montserrat;
 }
 
 .conteneur-images {
-  display: flex; /* Active Flexbox pour le conteneur */
-  flex-wrap: wrap; /* Permet aux images de passer à la ligne si nécessaire */
-  justify-content: space-around; /* Distribue l'espace entre les images */
-  align-items: stretch; /* Aligne le haut des éléments */
-  gap: 20px; /* Ajoute de l'espace entre les images */
-  padding: 60px; /* Ajoute un peu de marge autour du conteneur */
+  display: flex;
+  /* Active Flexbox pour le conteneur */
+  flex-wrap: wrap;
+  /* Permet aux images de passer à la ligne si nécessaire */
+  justify-content: space-around;
+  /* Distribue l'espace entre les images */
+  align-items: stretch;
+  /* Aligne le haut des éléments */
+  gap: 20px;
+  /* Ajoute de l'espace entre les images */
+  padding: 60px;
+  /* Ajoute un peu de marge autour du conteneur */
 }
 
-  img {
+img {
   max-width: 100%;
   height: auto;
   transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px; /* Pour un effet arrondi */
-  }
-  
-  img:hover {
-  transform: translateY(-5px); /* Légère élévation */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Ombre */
-  }
+  border-radius: 10px;
+  /* Pour un effet arrondi */
+}
+
+img:hover {
+  transform: translateY(-5px);
+  /* Légère élévation */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* Ombre */
+}
 
 .conteneur-images figure figcaption {
-  font-size: 0.9em; /* Taille de la police de la description */
-  color: #555; /* Couleur du texte de la description */
+  font-size: 0.9em;
+  /* Taille de la police de la description */
+  color: #555;
+  /* Couleur du texte de la description */
 }
 
 .site-footer {
-  background-color: #f0f0f0; /* Couleur de fond du pied de page (exemple) */
-  padding: 20px;
-  text-align: center; /* Centre le texte par défaut */
+  background-color: black;
+  /* Couleur de fond du pied de page (exemple) */
+  padding: 10px;
+  text-align: center;
+  /* Centre le texte par défaut */
 }
 
 .reseaux-sociaux {
-  display: flex; /* Active Flexbox pour le conteneur des logos */
-  justify-content: center; /* Centre les éléments horizontalement */
-  align-items: center; /* Centre les éléments verticalement (si nécessaire) */
-  gap: 15px; /* Espacement entre les logos */
-  margin-bottom: 10px; /* Marge en bas pour séparer des autres éléments du pied de page */
+  display: flex;
+  /* Active Flexbox pour le conteneur des logos */
+  justify-content: center;
+  /* Centre les éléments horizontalement */
+  align-items: center;
+  /* Centre les éléments verticalement (si nécessaire) */
+  gap: 15px;
+  /* Espacement entre les logos */
+  margin-bottom: 10px;
+  /* Marge en bas pour séparer des autres éléments du pied de page */
 }
 
 .reseaux-sociaux a {
-  display: block; /* Empêche les marges de se condenser et permet de définir une taille si nécessaire */
+  display: block;
+  /* Empêche les marges de se condenser et permet de définir une taille si nécessaire */
 }
 
 .reseaux-sociaux img {
-  height: 30px; /* Définissez la hauteur souhaitée */
-  width: auto; /* La largeur s'ajustera proportionnellement */
-  display: block; /* Supprime les espaces potentiels en bas de l'image */
+  height: 30px;
+  /* Définissez la hauteur souhaitée */
+  width: auto;
+  /* La largeur s'ajustera proportionnellement */
+  display: block;
+  /* Supprime les espaces potentiels en bas de l'image */
 }
 
 /* Optionnel : Pour des logos carrés avec une taille fixe */
@@ -137,7 +120,7 @@ ul {
   margin: 0;
 }
 
-form li + li {
+form li+li {
   margin-top: 1em;
 }
 
@@ -148,48 +131,173 @@ label {
   text-align: right;
 }
 
-input,
-textarea {
-  /* On s'assure que les champs texte ont la même police
-     Par défaut, les zones de texte ont une police à chasse
-     fixe. */
-  font: 1em sans-serif;
 
-  /* Taille uniforme pour des champs */
-  width: 300px;
+/* Général */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: deeppink;
+}
+
+/* Grille des produits */
+.product-grid {
+  display: flex;                 /* Utilise Flexbox */
+  flex-wrap: wrap;               /* Permet aux éléments de passer à la ligne suivante */
+  justify-content: space-between;/* Espacement égal entre les éléments */
+  gap: 20px;                     /* Espace entre chaque produit */
+  width: 100%;                   /* Assure que la grille occupe toute la largeur */
+}
+
+/* Chaque produit */
+.product {
+  width: 200px;                  /* Largeur de chaque produit */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;        /* Les éléments dans chaque produit sont disposés verticalement */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteneur des images */
+.image-wrapper {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.image-wrapper img {
+  width: 100%;         /* Les images remplissent tout l'espace disponible */
+  height: 100%;
+  object-fit: cover;    /* Cela garantit que l'image couvre tout l'espace sans déformation */
+}
+
+/* Description du produit */
+.product-description {
+  font-size: 14px;
+  color: deeppink;
+}
+
+/*DEBUT DE CODAGE MYRTIL*/
+
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-
-  /* On utilise la même bordure que pour le formulaire */
-  border: 1px solid #999;
+  /* Enlève les marges des navigateurs */
 }
 
-input:focus,
-textarea:focus {
-  /* On rajoute une mise en avant pour les éléments avec
-     le focus. */
-  border-color: #000;
+
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-textarea {
-  /* On aligne les textes sur plusieurs lignes avec leur
-     libellé. */
-  vertical-align: top;
 
-  /* On fournit un peut d'espace pour saisir du texte. */
-  height: 5em;
-
-  /* On permet de redimensionner verticalement. */
-  resize: vertical;
+body {
+  background-color: #FF00FF(206, 33, 177);
 }
 
-.button {
-  /* On aligne les boutons avec les champs texte. */
-  padding-left: 90px; /* La même taille que les libellés */
+
+header {
+  background-color: black;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  /* Distribue l'espace */
+  align-items: center;
+  /* Centre verticalement (pour le logo) */
+  padding: 0 20px;
+  position: relative;
+  /* Important pour positionner les éléments enfants absolument */
 }
 
-button {
-  /* Une marge supplémentaire représentant approximativement
-     le même espace qu'entre les libellés et les champs. */
-  margin-left: 0.5em;
+.logo {
+  height: 100px;
 }
 
+.aperoshow-container {
+  position: absolute;
+  /* Permet de positionner précisément */
+  top: 50%;
+  /* Centre verticalement */
+  left: 50%;
+  /* Centre horizontalement */
+  transform: translate(-50%, -60%);
+  /* Ajuste le centre et décale vers le haut */
+  text-align: center;
+  /* Centre les images à l'intérieur */
+}
+
+.aperoshow-image {
+  display: block;
+  max-height: 80px;
+  max-width: 90%;
+  /* Empêche l'image de dépasser la largeur du header */
+  margin: 0 auto 5px;
+  /* Centre horizontalement et ajoute un peu d'espace en bas */
+}
+
+.accroche-image {
+  position: absolute;
+  bottom: -19px;
+  /* Décalage du bas */
+  right: 80px;
+  /* Décalage de la droite */
+  max-height: 30px;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 10px;
+  gap: 10px;
+  /* Espace de 10px entre chaque onglet */
+}
+
+.navigation li {
+  flex: 1;
+  margin-right: 10px;
+  /* Ajoute une marge à droite de chaque onglet */
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+  /* Supprime la marge à droite du dernier onglet */
+}
+
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 15px 0;
+  text-decoration: none;
+  color: rgb(243, 6, 184);
+  background-color: black;
+  border: 4px solid transparent;
+  /* Bordure transparente par défaut */
+  transition: border-color 0.3s ease;
+  /* Transition douce pour le changement de couleur de bordure */
+  font-family: 'monoton', cursive;
+  font-size: 15px;
+}
+
+.navigation a:hover {
+  border-color: cyan;
+  /* Bordure au survol */
+  background-color: black;
+  /* Maintien du fond noir au survol */
+  color: cyan;
+  /* Couleur modifiée au survol */
+}
+
+/* FIN DE CODAGE MYRTIL /*
