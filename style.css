@@ -4,6 +4,7 @@
   box-sizing: border-box;
   /* Enlève les marges des navigateurs */
 }
+
 .libre-caslon-text-regular {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
@@ -24,14 +25,15 @@
 
 .big-shoulders-inline-titre {
   font-family: "Big Shoulders Inline", sans-serif;
-  font-optical-sizing:auto;
-  font-weight: 100;
+  font-optical-sizing: auto;
+  font-weight: 90;
   font-style: normal;
-  }
+}
 
 .image-a-gauche {
   float: left;
-  margin-right: 30px; /* Ajoute un espace entre l'image et le texte */
+  margin-right: 30px;
+  /* Ajoute un espace entre l'image et le texte */
   max-width: 100%;
   height: auto;
 }
@@ -44,21 +46,37 @@
 
 .titre-h1 {
   text-align: center;
-  
+  padding-bottom: 25px;
 }
+.titre-h2 {
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 25px;
+}
+p {
+  text-align: center;
+  padding: 15px;
+}
+
 body {
   background-color: rgb(206, 33, 177);
   display: flex;
-    flex-direction: column;
-    min-height: 100vh; /* Force le body à avoir au moins la hauteur de la fenêtre */
-    color: #e79bdb;
-    
+  flex-direction: column;
+  min-height: 100vh;
+  /* Force le body à avoir au moins la hauteur de la fenêtre */
+  color: #f0d4ec;
+font-family: "Libre Caslon Text", serif;
+font-size: 20px;
 }
 
 
-html, body {
-  height: 100%; /* Assure que le body prend toute la hauteur de la fenêtre */
-  margin: 0; /* Supprime les marges par défaut */
+
+html,
+body {
+  height: 100%;
+  /* Assure que le body prend toute la hauteur de la fenêtre */
+  margin: 0;
+  /* Supprime les marges par défaut */
 }
 
 header {
@@ -79,7 +97,7 @@ header {
 }
 
 .logo {
-  height: 170px;
+  height: 177px;
 }
 
 .aperoshow-container {
@@ -99,45 +117,42 @@ header {
 .aperoshow-image {
   display: block;
   max-height: 150px;
-  max-width: 90%;
+  max-width: 100%;
   /* Empêche l'image de dépasser la largeur du header */
   margin: 0 auto 5px;
   /* Centre horizontalement et ajoute un peu d'espace en bas */
 
 }
+
 .aperoshow-container img {
-    width: auto;
+  width: auto;
   display: block;
   transition: transform 0.3s, box-shadow 0.3s;
   border-radius: 10px;
   /* Pour un effet arrondi */
 }
-  .logo img {
-    width: auto;
+
+.logo img {
+  width: auto;
   display: block;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px;
-  /* Pour un effet arrondi */
+
 }
-.logo img:hover {
+
+
+.aperoshow-container img:hover {
   transform: translateY(-5px);
   /* Légère élévation */
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   /* Ombre */
 }
-.aperoshow-container img:hover {
-    transform: translateY(-5px);
-    /* Légère élévation */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    /* Ombre */
-  }
+
 .accroche-image {
   position: absolute;
-  bottom: -19px;
+  bottom: -40px;
   /* Décalage du bas */
   right: 80px;
   /* Décalage de la droite */
-  max-height: 30px;
+  max-height: 50px;
 }
 
 .navigation {
@@ -146,15 +161,15 @@ header {
   list-style-type: none;
   margin: 0;
   padding-bottom: 15px;
- 
-  
- 
- 
+
+
+
+
 }
 
 .navigation li {
   flex: 1;
-  
+
   /* Ajoute une marge à droite de chaque onglet */
 }
 
@@ -188,32 +203,29 @@ header {
 }
 
 main {
-  flex: 1; /* Permet au contenu principal de prendre tout l'espace disponible, poussant le footer vers le bas */
+  flex-grow: 1;
+  /* Permet au contenu principal de prendre tout l'espace disponible, poussant le footer vers le bas */
 }
 
 
 /* DEBUT CODAGE RAHMA */
 
-
-p {
+.texte-APEROSHOW {
   font-size: 18px;
   color: noir;
   font-family: "Libre Caslon Text", serif;
 }
 
 h2 {
-  font-size: 50px;
-  color: blueviolet;
+  font-style: italic;
+  text-align: center;
+  font-size: 25px;
 }
 
 h1 {
-    color: cyan;
-  font-family: "Big Shoulders Inline", sans-serif 
-}
+  color: cyan;
+  font-family: "Big Shoulders Inline", sans-serif;
 
-h3 {
-  font-size: 40px;
-  color: blueviolet;
 }
 
 .conteneur-deguisements-images {
@@ -258,9 +270,12 @@ h3 {
   color: white;
   width: 100%;
   padding: 10px;
-  display: flex; /* Utiliser Flexbox pour aligner les éléments */
-  justify-content: space-between; /* Distribuer l'espace entre les éléments (logos et copyright) */
-  align-items: center; /* Aligner verticalement les éléments */
+  display: flex;
+  /* Utiliser Flexbox pour aligner les éléments */
+  justify-content: space-between;
+  /* Distribuer l'espace entre les éléments (logos et copyright) */
+  align-items: center;
+  /* Aligner verticalement les éléments */
   text-align: center;
 }
 
@@ -268,9 +283,10 @@ h3 {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px; /* Essayez différentes valeurs jusqu'à obtenir l'espacement souhaité */
+  gap: 8px;
+  /* Essayez différentes valeurs jusqu'à obtenir l'espacement souhaité */
   margin: 0 auto;
-  margin-left:20px
+  margin-left: 20px
 }
 
 .reseaux-sociaux a {
@@ -284,16 +300,19 @@ h3 {
   transition: transform 0.3s, box-shadow 0.3s;
   border-radius: 10px;
   /* Pour un effet arrondi */
-  }
-  .reseaux-sociaux img:hover {
-    transform: translateY(-5px);
-    /* Légère élévation */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-    /* Ombre */
-  }
+}
+
+.reseaux-sociaux img:hover {
+  transform: translateY(-5px);
+  /* Légère élévation */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* Ombre */
+}
+
 .site-footer p {
   font-size: 0.9em;
-  margin: 0; /* Supprimer les marges par défaut du paragraphe */
+  margin: 0;
+  /* Supprimer les marges par défaut du paragraphe */
   /* align-self: flex-start; /* Optionnel: Si vous voulez forcer l'alignement à gauche dans certains cas */
 }
 
@@ -302,9 +321,7 @@ form {
   margin: 0 auto;
   width: 400px;
   /* Le contour du formulaire */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+  padding: 4em;
 }
 
 ul {
@@ -332,12 +349,26 @@ textarea {
   font: 1em sans-serif;
 
   /* Taille uniforme pour des champs */
+  width: 550px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+
+}
+
+
+.quantité {
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
   width: 50px;
   box-sizing: border-box;
 
   /* On utilise la même bordure que pour le formulaire */
   border: 1px solid #999;
 }
+
 
 input:focus,
 textarea:focus {
@@ -352,7 +383,7 @@ textarea {
   vertical-align: top;
 
   /* On fournit un peut d'espace pour saisir du texte. */
-  height: 5em;
+  height: 10em;
 
   /* On permet de redimensionner verticalement. */
   resize: vertical;
@@ -362,12 +393,16 @@ textarea {
   /* On aligne les boutons avec les champs texte. */
   padding-left: 90px;
   /* La même taille que les libellés */
+  ;
 }
 
 button {
   /* Une marge supplémentaire représentant approximativement
        le même espace qu'entre les libellés et les champs. */
   margin-left: 0.5em;
+
+  display: flex;
+  align-items: end;
 }
 
 /* FIN CODAGE "premier commit RAHMA */
@@ -377,11 +412,11 @@ button {
 form {
   /* On centre le formulaire */
   margin: 0 auto;
-  width: 400px;
+  padding: 25px;
+  width: 600px;
   /* Le contour du formulaire */
-  padding: 1em;
-  border: 1px solid #ccc;
-  border-radius: 1em;
+  padding: 30px;
+
 }
 
 ul {
@@ -403,24 +438,32 @@ label {
 
 /* Grille des produits */
 .product-grid {
-  display: flex;                 /* Utilise Flexbox */
-  flex-wrap: wrap;               /* Permet aux éléments de passer à la ligne suivante */
-  justify-content: space-between;/* Espacement égal entre les éléments */
-  gap: 20px;                     /* Espace entre chaque produit */
-  width: 100%;                   /* Assure que la grille occupe toute la largeur */
+  display: flex;
+  /* Utilise Flexbox */
+  flex-wrap: wrap;
+  /* Permet aux éléments de passer à la ligne suivante */
+  justify-content: space-between;
+  /* Espacement égal entre les éléments */
+  gap: 20px;
+  /* Espace entre chaque produit */
+  width: 100%;
+  padding: 30px;
+  /* Assure que la grille occupe toute la largeur */
 }
 
 /* Chaque produit */
 .product {
-  width: 200px;                  /* Largeur de chaque produit */
+  width: 200px;
+  /* Largeur de chaque produit */
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;        /* Les éléments dans chaque produit sont disposés verticalement */
+  flex-direction: column;
+  /* Les éléments dans chaque produit sont disposés verticalement */
   justify-content: center;
   align-items: center;
 }
@@ -428,15 +471,19 @@ label {
 /* Conteneur des images */
 .image-wrapper {
   width: 100%;
-  height: 200px;
+  height: 150px;
   overflow: hidden;
   margin-bottom: 10px;
+
 }
 
 .image-wrapper img {
-  width: 100%;         /* Les images remplissent tout l'espace disponible */
+  width: 100%;
+  /* Les images remplissent tout l'espace disponible */
   height: 100%;
-  object-fit: cover;    /* Cela garantit que l'image couvre tout l'espace sans déformation */
+  object-fit: cover;
+  /* Cela garantit que l'image couvre tout l'espace sans déformation */
+
 }
 
 /* Description du JEUX APERODELUX */
@@ -447,45 +494,148 @@ label {
 
 /* Grille des produits */
 .jeuxdelux-grid {
-  display: flex;                 /* Utilise Flexbox */
-  flex-wrap: wrap;               /* Permet aux éléments de passer à la ligne suivante */
-  justify-content: space-between;/* Espacement égal entre les éléments */
-  gap: 20px;                     /* Espace entre chaque produit */
-  width: 100%;                   /* Assure que la grille occupe toute la largeur */
+  display: flex;
+  /* Utilise Flexbox */
+  flex-wrap: wrap;
+  /* Permet aux éléments de passer à la ligne suivante */
+  justify-content: space-between;
+  /* Espacement égal entre les éléments */
+  gap: 20px;
+  /* Espace entre chaque produit */
+  width: 100%;
+  /* Assure que la grille occupe toute la largeur */
 }
 
 /* Chaque produit */
 .jeuxdelux {
-  width: 200px;                  /* Largeur de chaque produit */
+  width: 200px;
+  /* Largeur de chaque produit */
   background-color: white;
   border: 1px solid #ccc;
   border-radius: 8px;
   padding: 10px;
   text-align: center;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
   display: flex;
-  flex-direction: column;        /* Les éléments dans chaque produit sont disposés verticalement */
+  flex-direction: column;
+  /* Les éléments dans chaque produit sont disposés verticalement */
   justify-content: center;
   align-items: center;
 }
 
 /* Conteneur des images */
 .image-wrapper {
-  width: 100%;
+  width: 100;
   height: 200px;
   overflow: hidden;
   margin-bottom: 10px;
+  padding: 20px;
 }
 
-.jeuxdelux img, .product img {
-max-width: 100%;
-height: auto;
-transition: transform 0.3s, box-shadow 0.3s;
-border-radius: 10px;
-/* Pour un effet arrondi */
+.jeuxdelux img,
+.product img {
+  max-width: 80%;
+  height: auto;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  /* Pour un effet arrondi */
+  padding: 20px;
 }
+
 .carre-contenu {
-padding: 15px;
+  padding: 15px;
+}
 
+/* --- Layout --- */
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-width: 2000px;
+  margin: 0 auto;
+ 
 
+}
+
+.left-column {
+  width: 20%;
+  background-color: black;
+  color: rgb(243, 6, 184);
+  border: 2px solid cyan;
+  font-family:"Big Shoulders Inline", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.right-column {
+  width: 70%;
+}
+
+/* --- Liste --- */
+.left-list li {
+  cursor: pointer;
+  padding: 8px;
+  transition: background-color 0.3s;
+  list-style-type: none;
+}
+
+.left-list li:hover {
+  background-color: black;
+  color: rgb(243, 6, 184);
+  border: 2px solid cyan;
+  font-family:"Big Shoulders Inline", sans-serif;
+  font-size: 30px;
+  text-align: center;
+}
+
+.left-list li.selected {
+  background-color: black;
+  font-weight: bold;
+}
+
+/* --- Contenu animé --- */
+#content-area {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+  margin-top: 20px;
+  text-align: center;
+}
+
+#content-area.visible {
+  display: block;
+  opacity: 1;
+}
+
+/* --- Responsive --- */
+@media screen and (max-width: 768px) {
+  .container {
+      flex-direction: column;
+  }
+
+  .left-column,
+  .right-column {
+      width: 100%;
+      padding: 0;
+      border: none;
+  }
+
+  .left-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      padding: 0;
+  }
+
+  .left-list li {
+      flex: 1 1 45%;
+      background-color: #f9f9f9;
+      text-align: center;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+  }
+
+  .left-list li.selected {
+      background-color: #c8f7d2;
+  }
 }
