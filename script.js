@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const contentMap = {
         'jeu1': `
-            <h2>Le Doute Raisonnable</h2>
+            <h3>DOUTE RAISONABLE</h3>
             <p>Objectif : faire croire une info fausse... ou défendre une vraie qui semble improbable.</p>
             <ul>
                 <li>Annonce : "Je vais vous raconter un truc, à vous de dire si c’est vrai ou inventé."</li>
@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </ul>
         `,
         'jeu2': `
-            <h2>Mot Karma</h2>
+            <h3>MOT KARMA</h3>
             <ul>
                 <li>Chaque joueur choisit un mot courant (ex : "boire").</li>
                 <li>Si quelqu’un le dit : 1 "karma".</li>
@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function () {
             </ul>
         `,
         'jeu3': `
-            <h2>La Minute Show-Off</h2>
+            <h3>SHOW-OFF</h3>
             <ul>
                 <li>Chaque joueur se vante d’un autre pendant 1 minute.</li>
                 <li>Vrai, faux ou absurde, tout est permis.</li>
@@ -32,16 +32,16 @@ document.addEventListener('DOMContentLoaded', function () {
             </ul>
         `,
         'jeu4': `
-            <h2>Freeze Version Apéro</h2>
+            <h3>FREEZE</h3>
             <ul>
                 <li>Quelqu’un crie "Freeze".</li>
                 <li>Tous s’arrêtent net.</li>
-                <li>Le dernier à bouger = gage.</li>
+                <li>Le dernier à bouger à un gage.</li>
                 <li>Utilisable une seule fois toutes les 10 minutes.</li>
             </ul>
         `,
         'jeu5': `
-            <h2>Le Psycho Quiz</h2>
+            <h3>PSYCHO QUIZ</h3>
             <ul>
                 <li>Un joueur sort de la pièce.</li>
                 <li>Les autres répondent à une question sur lui ("quel animal le représente ?").</li>
