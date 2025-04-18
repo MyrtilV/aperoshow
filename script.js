@@ -50,21 +50,21 @@ document.addEventListener('DOMContentLoaded', function () {
             </ul>
         `
     };
-
+// fonction au click
     listItems.forEach(item => {
         item.addEventListener('click', function () {
             const contentId = this.dataset.content;
-
+// remplace l'affichage au click
             if (contentMap[contentId]) {
-                contentArea.classList.remove('visible');
+                contentArea.classList.remove('visible');// rend visible le contenu
 
                 setTimeout(() => {
                     contentArea.innerHTML = contentMap[contentId];
                     accueilImages.style.display = 'none';
-                    contentArea.classList.add('visible');
+                    contentArea.classList.add('visible'); // ajoute le nouvel affichage quand on change d element de liste
                 }, 100);
 
-                // Highlight sélection
+                //met la selection en gras
                 listItems.forEach(li => li.classList.remove('selected'));
                 this.classList.add('selected');
             }

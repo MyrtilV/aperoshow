@@ -1,3 +1,5 @@
+
+/* head */
 * {
   margin: 0;
   padding: 0;
@@ -5,6 +7,12 @@
   /* Enlève les marges des navigateurs */
 }
 
+ /* POLICES */
+.monoton-regular {
+  font-family: "Monoton", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 .libre-caslon-text-regular {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
@@ -28,36 +36,21 @@
   font-optical-sizing: auto;
   font-weight: 90;
   font-style: normal;
-}
-
-.image-a-gauche {
-  float: left;
-  margin-right: 30px;
-  /* Ajoute un espace entre l'image et le texte */
-  max-width: 100%;
-  height: auto;
-
-}
-.image-a-gauche img {
-width: 400px;
-}
-.monoton-regular {
-  font-family: "Monoton", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-.titre {
-  text-align: center;
-}
-
-
-p {
-  text-align: center;
-  padding: 15px;
+  }
   
-}
-
-body {
+  /* GENERAL */
+  .titre {
+    text-align: center;
+  }
+  
+  
+  p {
+    text-align: center;
+    padding: 15px;
+  
+  }
+  
+  body {
   background-color: rgb(206, 33, 177);
  
   display: flex;
@@ -69,8 +62,6 @@ font-family: "Libre Caslon Text", serif;
 font-size: 20px;
 }
 
-
-
 html,
 body {
   height: 100%;
@@ -78,7 +69,61 @@ body {
   margin: 0;
   /* Supprime les marges par défaut */
 }
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding-bottom: 15px;
 
+
+
+
+}
+
+.navigation li {
+  flex: 1;
+
+  /* Ajoute une marge à droite de chaque onglet */
+}
+
+.navigation li:last-child {
+  margin-right: 0;
+  /* Supprime la marge à droite du dernier onglet */
+}
+
+.navigation a {
+  display: block;
+  text-align: center;
+  padding: 0;
+  text-decoration: none;
+  color: rgb(243, 6, 184);
+  background-color: black;
+  border: 4px solid transparent;
+  /* Bordure transparente par défaut */
+  transition: border-color 0.3s ease;
+  /* Transition douce pour le changement de couleur de bordure */
+  font-family: "Big Shoulders Inline", sans-serif;
+  font-size: 40px;
+}
+
+.navigation a:hover {
+  border-color: cyan;
+  /* Bordure au survol */
+  background-color: black;
+  /* Maintien du fond noir au survol */
+  color: cyan;
+  /* Couleur modifiée au survol */
+}
+
+main {
+  
+  flex-grow: 1;
+  /* Permet au contenu principal de prendre tout l'espace disponible, poussant le footer vers le bas */
+}
+/* GENERAL */
+
+/* HEADER */
 header {
   background-color: black;
   width: 100%;
@@ -93,7 +138,6 @@ header {
   /* Important pour positionner les éléments enfants absolument */
   border: 4px solid;
   border-color: cyan;
-
 }
 
 .logo {
@@ -167,59 +211,77 @@ top: 40px;
   /* Décalage de la droite */
   max-height: 50px;
 }
+/* HEADER */
 
-.navigation {
+/* FOOTER */
+.site-footer {
+  background-color: rgb(0, 0, 0);
+  color: white;
+  width: 100%;
+  padding: 10px;
   display: flex;
+  /* Utiliser Flexbox pour aligner les éléments */
   justify-content: space-between;
-  list-style-type: none;
-  margin: 0;
-  padding-bottom: 15px;
-
-
-
-
-}
-
-.navigation li {
-  flex: 1;
-
-  /* Ajoute une marge à droite de chaque onglet */
-}
-
-.navigation li:last-child {
-  margin-right: 0;
-  /* Supprime la marge à droite du dernier onglet */
-}
-
-.navigation a {
-  display: block;
+  /* Distribuer l'espace entre les éléments (logos et copyright) */
+  align-items: center;
+  /* Aligner verticalement les éléments */
   text-align: center;
-  padding: 0;
-  text-decoration: none;
-  color: rgb(243, 6, 184);
-  background-color: black;
-  border: 4px solid transparent;
-  /* Bordure transparente par défaut */
-  transition: border-color 0.3s ease;
-  /* Transition douce pour le changement de couleur de bordure */
-  font-family: "Big Shoulders Inline", sans-serif;
-  font-size: 40px;
 }
 
-.navigation a:hover {
-  border-color: cyan;
-  /* Bordure au survol */
-  background-color: black;
-  /* Maintien du fond noir au survol */
-  color: cyan;
-  /* Couleur modifiée au survol */
+.reseaux-sociaux {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  /* Essayez différentes valeurs jusqu'à obtenir l'espacement souhaité */
+  margin: 0 auto;
+  margin-left: 20px
 }
 
-main {
-  
-  flex-grow: 1;
-  /* Permet au contenu principal de prendre tout l'espace disponible, poussant le footer vers le bas */
+.reseaux-sociaux a {
+  display: block;
 }
+
+.reseaux-sociaux img {
+  height: 30px;
+  width: auto;
+  display: block;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  /* Pour un effet arrondi */
+}
+
+.reseaux-sociaux img:hover {
+  transform: translateY(-5px);
+  /* Légère élévation */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  /* Ombre */
+}
+
+.site-footer p {
+  font-size: 0.7em;
+  margin: 0;
+  /* Supprimer les marges par défaut du paragraphe */
+  /* align-self: flex-start; /* Optionnel: Si vous voulez forcer l'alignement à gauche dans certains cas */
+}
+ /* FOOTER */
+
+ /* PAGE APEROSHOW */
+.image-a-gauche {
+  float: left;
+  margin-right: 30px;
+  /* Ajoute un espace entre l'image et le texte */
+  max-width: 100%;
+  height: auto;
+}
+
+.image-a-gauche img {
+width: 400px;
+}
+
+
+
+
 
 
 /* DEBUT CODAGE RAHMA */
@@ -293,56 +355,7 @@ h3 {
   /* Couleur du texte de la description */
 }
 
-.site-footer {
-  background-color: rgb(0, 0, 0);
-  color: white;
-  width: 100%;
-  padding: 10px;
-  display: flex;
-  /* Utiliser Flexbox pour aligner les éléments */
-  justify-content: space-between;
-  /* Distribuer l'espace entre les éléments (logos et copyright) */
-  align-items: center;
-  /* Aligner verticalement les éléments */
-  text-align: center;
-}
 
-.reseaux-sociaux {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
-  /* Essayez différentes valeurs jusqu'à obtenir l'espacement souhaité */
-  margin: 0 auto;
-  margin-left: 20px
-}
-
-.reseaux-sociaux a {
-  display: block;
-}
-
-.reseaux-sociaux img {
-  height: 30px;
-  width: auto;
-  display: block;
-  transition: transform 0.3s, box-shadow 0.3s;
-  border-radius: 10px;
-  /* Pour un effet arrondi */
-}
-
-.reseaux-sociaux img:hover {
-  transform: translateY(-5px);
-  /* Légère élévation */
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  /* Ombre */
-}
-
-.site-footer p {
-  font-size: 0.7em;
-  margin: 0;
-  /* Supprimer les marges par défaut du paragraphe */
-  /* align-self: flex-start; /* Optionnel: Si vous voulez forcer l'alignement à gauche dans certains cas */
-}
 
 form {
   /* On centre le formulaire */
