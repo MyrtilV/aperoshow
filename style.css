@@ -1,4 +1,3 @@
-
 /* head */
 * {
   margin: 0;
@@ -7,12 +6,13 @@
   /* Enlève les marges des navigateurs */
 }
 
- /* POLICES */
+/* POLICES */
 .monoton-regular {
   font-family: "Monoton", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
+
 .libre-caslon-text-regular {
   font-family: "Libre Caslon Text", serif;
   font-weight: 400;
@@ -36,30 +36,27 @@
   font-optical-sizing: auto;
   font-weight: 90;
   font-style: normal;
-  }
-  
-  /* GENERAL */
-  .titre {
-    text-align: center;
-  }
-  
-  
-  p {
-    text-align: center;
-    padding: 15px;
-  
-  }
-  
-  body {
+}
+
+/* GENERAL */
+.titre {
+  text-align: center;
+}
+
+p {
+  text-align: center;
+  padding: 15px;
+}
+
+body {
   background-color: rgb(206, 33, 177);
- 
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   /* Force le body à avoir au moins la hauteur de la fenêtre */
   color: #f0d4ec;
-font-family: "Libre Caslon Text", serif;
-font-size: 20px;
+  font-family: "Libre Caslon Text", serif;
+  font-size: 20px;
 }
 
 html,
@@ -69,21 +66,17 @@ body {
   margin: 0;
   /* Supprime les marges par défaut */
 }
+
 .navigation {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
   margin: 0;
   padding-bottom: 15px;
-
-
-
-
 }
 
 .navigation li {
   flex: 1;
-
   /* Ajoute une marge à droite de chaque onglet */
 }
 
@@ -117,10 +110,41 @@ body {
 }
 
 main {
-  
   flex-grow: 1;
   /* Permet au contenu principal de prendre tout l'espace disponible, poussant le footer vers le bas */
 }
+
+h2 {
+  font-style: italic;
+  text-align: center;
+  font-size: 22px;
+  padding-bottom: 15px;
+  color: cyan;
+  text-align: center;
+}
+
+h1 {
+  color: cyan;
+  font-family: "Big Shoulders Inline", sans-serif;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+h3 {
+  font-size: 20px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-style: italic;
+  color: cyan
+}
+
+.carre-contenu {
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
 /* GENERAL */
 
 /* HEADER */
@@ -155,7 +179,6 @@ header {
   /* Ajuste le centre et décale vers le haut */
   text-align: center;
   /* Centre les images à l'intérieur */
-
 }
 
 .aperoshow-image {
@@ -165,7 +188,6 @@ header {
   /* Empêche l'image de dépasser la largeur du header */
   margin: 0 auto 5px;
   /* Centre horizontalement et ajoute un peu d'espace en bas */
-
 }
 
 .aperoshow-container img {
@@ -179,20 +201,20 @@ header {
 .logo img {
   width: auto;
   display: block;
-
 }
+
 .logo2-image {
   position: absolute;
-top: 40px;
+  top: 40px;
   /* Décalage du bas */
   right: 20px;
   /* Décalage de la droite */
-  max-height:120px;
+  max-height: 120px;
 }
+
 .logo2 img {
   width: auto;
   display: block;
-
 }
 
 
@@ -211,7 +233,6 @@ top: 40px;
   /* Décalage de la droite */
   max-height: 50px;
 }
-/* HEADER */
 
 /* FOOTER */
 .site-footer {
@@ -264,9 +285,8 @@ top: 40px;
   /* Supprimer les marges par défaut du paragraphe */
   /* align-self: flex-start; /* Optionnel: Si vous voulez forcer l'alignement à gauche dans certains cas */
 }
- /* FOOTER */
 
- /* PAGE APEROSHOW */
+/*---DEBUT APEROSHOW---*/
 .image-a-gauche {
   float: left;
   margin-right: 30px;
@@ -276,15 +296,8 @@ top: 40px;
 }
 
 .image-a-gauche img {
-width: 400px;
+  width: 400px;
 }
-
-
-
-
-
-
-/* DEBUT CODAGE RAHMA */
 
 .texte-APEROSHOW {
   font-size: 18px;
@@ -292,32 +305,9 @@ width: 400px;
   font-family: "Libre Caslon Text", serif;
   text-align: justify;
 }
+/*---FIN APEROSHOW---*/
 
-h2 {
-  font-style: italic;
-  text-align: center;
-  font-size: 22px;
-  padding-bottom: 15px;
-  color: cyan;
-  text-align: center;
-}
-
-h1 {
-  color: cyan;
-  font-family: "Big Shoulders Inline", sans-serif;
-  text-align: center;
-  padding-bottom: 15px;
-
-}
-h3 {
-  font-size: 20px;
-  text-align: center;
-  padding-bottom: 15px;
-  font-style: italic;
-  color:cyan
-
-}
-
+/*---DEBUT APEROHEROS---*/
 .conteneur-deguisements-images {
   display: flex;
   /* Active Flexbox pour le conteneur */
@@ -355,6 +345,7 @@ h3 {
   /* Couleur du texte de la description */
 }
 
+<<<<<<< HEAD
 
 
 form {
@@ -501,6 +492,8 @@ label {
   text-align: right;
 }
 
+=======
+>>>>>>> 4d7b88857ee2d261abe2c05a8db83905aa3933b7
 /* Grille des produits */
 .product-grid {
   display: flex;
@@ -531,6 +524,7 @@ label {
   /* Les éléments dans chaque produit sont disposés verticalement */
   justify-content: center;
   align-items: center;
+  color: rgb(206, 33, 177);
 }
 
 /* Conteneur des images */
@@ -539,7 +533,6 @@ label {
   height: 150px;
   overflow: hidden;
   margin-bottom: 10px;
-
 }
 
 .image-wrapper img {
@@ -548,8 +541,10 @@ label {
   height: 100%;
   object-fit: cover;
   /* Cela garantit que l'image couvre tout l'espace sans déformation */
-
 }
+/*---FIN APEROHEROS---*/
+
+/*---DEBUT APERODELUX---*/
 
 /* Description du JEUX APERODELUX */
 .jeuxdelux-description {
@@ -607,15 +602,9 @@ label {
   /* Pour un effet arrondi */
   padding: 20px;
 }
+/*---FIN APERODELUX---*/
 
-.carre-contenu {
-  padding-left: 100px;
-  padding-right: 100px;
-  padding-bottom: 30px;
-  padding-top: 30px;
-  
-}
-
+/*---DEBUT APEROCHEAP---*/
 /* --- Layout --- */
 .container {
   display: flex;
@@ -623,8 +612,6 @@ label {
   gap: 20px;
   max-width: 2000px;
   margin: 0 auto;
- 
-
 }
 
 .left-column {
@@ -632,23 +619,24 @@ label {
   background-color: black;
   color: rgb(243, 6, 184);
   border: 2px solid cyan;
-  font-family:"Big Shoulders Inline", sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-size: 30px;
   text-align: center;
 }
 
 .right-column {
   width: 70%;
- align-items: center;
- 
-}
-#accueil-images {
-  display: flex;
-  flex-direction: column; /* Pour que le texte et l'image soient l'un au-dessus de l'autre */
-  align-items: center; /* Centre horizontalement les éléments enfants */
-  /* Autres styles pour #accueil-images */
+  align-items: center;
 }
 
+#accueil-images {
+  display: flex;
+  flex-direction: column;
+  /* Pour que le texte et l'image soient l'un au-dessus de l'autre */
+  align-items: center;
+  /* Centre horizontalement les éléments enfants */
+  /* Autres styles pour #accueil-images */
+}
 
 /* --- Liste --- */
 .left-list li {
@@ -656,14 +644,13 @@ label {
   padding: 8px;
   transition: background-color 0.3s;
   list-style-type: none;
-  
 }
 
 .left-list li:hover {
   background-color: black;
   color: rgb(243, 6, 184);
   border: 2px solid cyan;
-  font-family:"Big Shoulders Inline", sans-serif;
+  font-family: "Big Shoulders Inline", sans-serif;
   font-size: 30px;
   text-align: center;
 }
@@ -680,13 +667,13 @@ label {
   transition: opacity 0.5s ease-in-out;
   margin-top: 20px;
   text-align: center;
-  
 }
 
 #content-area.visible {
   display: block;
   opacity: 1;
 }
+
 .indexagauche {
   display: flex;
   justify-content: center;
@@ -698,32 +685,146 @@ label {
 /* --- Responsive --- */
 @media screen and (max-width: 768px) {
   .container {
-      flex-direction: column;
+    flex-direction: column;
   }
 
   .left-column,
   .right-column {
-      width: 100%;
-      padding: 0;
-      border: none;
+    width: 100%;
+    padding: 0;
+    border: none;
   }
 
   .left-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 8px;
-      padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    padding: 0;
   }
 
   .left-list li {
-      flex: 1 1 45%;
-      background-color: #f9f9f9;
-      text-align: center;
-      border: 1px solid #ddd;
-      border-radius: 4px;
+    flex: 1 1 45%;
+    background-color: #f9f9f9;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 4px;
   }
 
   .left-list li.selected {
-      background-color: #c8f7d2;
+    background-color: #c8f7d2;
   }
 }
+/*---FIN APEROCHEAP---*/
+
+/*---DEBUT APEROXP--- */
+form {
+  /* On centre le formulaire */
+  margin: 0 auto;
+  padding: 25px;
+  width: 600px;
+  /* Le contour du formulaire */
+  padding: 30px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li+li {
+  margin-top: 1em;
+}
+
+label {
+  /* Taille et alignement uniformes */
+  display: inline-block;
+  width: 150px;
+  text-align: left;
+}
+
+.form-container {
+  display: flex;
+  align-items: center;
+  /* Centre verticalement les éléments enfants */
+  flex-direction: column;
+  /* Vous pourriez aussi vouloir contrôler la direction (par défaut row) */
+  /* flex-direction: row; */
+  /* Ou si vous voulez qu'ils soient l'un en dessous de l'autre (mais alignés verticalement au centre): */
+  /* flex-direction: column; */
+}
+
+.form-button {
+  /* Ajoutez des marges pour l'espacement si nécessaire */
+  display: flex;
+  width: 150px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+}
+
+input,
+textarea {
+  /* On s'assure que les champs texte ont la même police
+       Par défaut, les zones de texte ont une police à chasse
+       fixe. */
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 550px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* On rajoute une mise en avant pour les éléments avec
+       le focus. */
+  border-color: #000;
+}
+
+.quantité {
+  font: 1em sans-serif;
+
+  /* Taille uniforme pour des champs */
+  width: 50px;
+  box-sizing: border-box;
+
+  /* On utilise la même bordure que pour le formulaire */
+  border: 1px solid #999;
+}
+
+textarea {
+  /* On aligne les textes sur plusieurs lignes avec leur
+       libellé. */
+  vertical-align: top;
+
+  /* On fournit un peut d'espace pour saisir du texte. */
+  height: 10em;
+
+  /* On permet de redimensionner verticalement. */
+  resize: vertical;
+}
+
+.button {
+  /* On aligne les boutons avec les champs texte. */
+  padding-left: 90px;
+  /* La même taille que les libellés */
+}
+
+button {
+  /* Une marge supplémentaire représentant approximativement
+       le même espace qu'entre les libellés et les champs. */
+  margin-left: 0.5em;
+
+  display: flex;
+  align-items: end;
+}
+
+/* ---FIN APEROXP--- */

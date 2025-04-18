@@ -9,10 +9,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap"
     rel="stylesheet">
+    <script src="w3.js"></script>
 </head>
 
 <body>
-  <div id="page-header">
+  <div w3-include-html="header.html"></div>
   </div>
   <main class="APEROSHOW-main">
     <nav>
@@ -58,20 +59,10 @@
         !</p>
       </div>
   </main>
-  <footer class="site-footer">
-    <div class="reseaux-sociaux">
-      <a href="https://www.facebook.com/votrepage" target="_blank" aria-label="Facebook">
-        <img src="IMAGE/FACEBOOK.png" alt="Facebook">
-      </a>
-      <a href="https://twitter.com/votretwitter" target="_blank" aria-label="Twitter">
-        <img src="IMAGE/twitter.png" alt="Twitter">
-      </a>
-      <a href="https://www.instagram.com/votreinsta" target="_blank" aria-label="Instagram">
-        <img src="IMAGE/instagram3.jpg" alt="Instagram">
-      </a>
-    </div>
-    <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
-  </footer>
+  <div w3-include-html="footer.html"></div>
+  <script>
+      w3.includeHTML();
+  </script>
 </body>
 
 </html>
