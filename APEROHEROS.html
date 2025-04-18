@@ -9,10 +9,11 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap"
     rel="stylesheet">
+    <script src="w3.js"></script>
 </head>
 
 <body>
-  
+  <div w3-include-html="header.html"></div>
   <main class="APEROSHOW-main">
     <nav>
       <ul class="navigation">
@@ -42,7 +43,7 @@
         <div class="product" id="produit2">
           <img src="IMAGE/deguisement1.jpg" alt="Super cocktail">
           <input class="quantité" type="number" class="product-qty" min="1" value="1">
-          <div class="product-description">Super apéro</div>
+          <div class="product-description">Super cocktail</div>
           <button>Ajouter au panier</button>
         </div>
 
@@ -84,7 +85,9 @@
 
     </div>
   </main>
-  
+  <div w3-include-html="footer.html"></div>
+  <script>
+      w3.includeHTML();
+  </script>
 </body>
-
 </html>

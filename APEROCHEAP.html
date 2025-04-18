@@ -9,17 +9,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Libre+Caslon+Text:ital,wght@0,400;0,700;1,400&family=Monoton&display=swap"
         rel="stylesheet">
+        <script src="w3.js"></script>
 </head>
 
 <body>
-    <header>
-        <img src="logo/logo.png" alt="logo" class="logo">
-        <img src="logo/logo sans AP.png" alt="logo2" class="logo2-image">
-        <div class="aperoshow-container">
-            <img src="logo/accroche.png" alt="phrase d accroche" class="accroche-image">
-            <img src="logo/APEROSHOW.png" alt="aperoshow" class="aperoshow-image">
-        </div>
-    </header>
+    
+        <div w3-include-html="header.html"></div>
+   
     <main class="APEROSHOW-main">
         <nav>
             <ul class="navigation">
@@ -66,20 +62,9 @@
 <p>Si tu as toi aussi des idées de jeux originaux avec des règles simples et aucune dépense à faire pour y jouer, hésite pas à nous les partager !</p>
         </div>
     </main>
-    <footer class="site-footer">
-        <div class="reseaux-sociaux">
-            <a href="https://www.facebook.com/votrepage" target="_blank" aria-label="Facebook">
-                <img src="IMAGE/FACEBOOK.png" alt="Facebook">
-            </a>
-            <a href="https://twitter.com/votretwitter" target="_blank" aria-label="Twitter">
-                <img src="IMAGE/twitter.png" alt="Twitter">
-            </a>
-            <a href="https://www.instagram.com/votreinsta" target="_blank" aria-label="Instagram">
-                <img src="IMAGE/instagram3.jpg" alt="Instagram">
-            </a>
-        </div>
-        <p>&copy; 2025 Mon Site Web. Tous droits réservés.</p>
-    </footer>
+    <div w3-include-html="footer.html"></div>
+    <script>
+        w3.includeHTML();
+    </script>
 </body>
-
 </html>
